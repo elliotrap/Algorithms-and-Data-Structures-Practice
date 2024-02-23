@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+func caesarCipherEncryptor(_ string: String) {
+    
+}

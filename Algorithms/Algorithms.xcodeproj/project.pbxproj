@@ -13,6 +13,7 @@
 		21AE13662B88372F00CD7890 /* DepthFirstSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AE13652B88372F00CD7890 /* DepthFirstSearch.swift */; };
 		21AE13682B88374900CD7890 /* BranchSums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AE13672B88374900CD7890 /* BranchSums.swift */; };
 		21AE136A2B88376B00CD7890 /* CipherEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AE13692B88376B00CD7890 /* CipherEncryptor.swift */; };
+		21AE136C2B884B7500CD7890 /* insertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AE136B2B884B7500CD7890 /* insertionSort.swift */; };
 		21E40BDE2B883129005886FB /* AlgorithmsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E40BDD2B883129005886FB /* AlgorithmsApp.swift */; };
 		21E40BE02B883129005886FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E40BDF2B883129005886FB /* ContentView.swift */; };
 		21E40BE22B88312A005886FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21E40BE12B88312A005886FB /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		21AE13652B88372F00CD7890 /* DepthFirstSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthFirstSearch.swift; sourceTree = "<group>"; };
 		21AE13672B88374900CD7890 /* BranchSums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchSums.swift; sourceTree = "<group>"; };
 		21AE13692B88376B00CD7890 /* CipherEncryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CipherEncryptor.swift; sourceTree = "<group>"; };
+		21AE136B2B884B7500CD7890 /* insertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = insertionSort.swift; sourceTree = "<group>"; };
 		21E40BDA2B883129005886FB /* Algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21E40BDD2B883129005886FB /* AlgorithmsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsApp.swift; sourceTree = "<group>"; };
 		21E40BDF2B883129005886FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				21AE13652B88372F00CD7890 /* DepthFirstSearch.swift */,
 				21AE13672B88374900CD7890 /* BranchSums.swift */,
 				21AE13692B88376B00CD7890 /* CipherEncryptor.swift */,
+				21AE136B2B884B7500CD7890 /* insertionSort.swift */,
 				21E40BE12B88312A005886FB /* Assets.xcassets */,
 				21E40BE32B88312A005886FB /* Preview Content */,
 			);
@@ -280,6 +283,7 @@
 				21AE13662B88372F00CD7890 /* DepthFirstSearch.swift in Sources */,
 				21AE13602B88317100CD7890 /* TwoNumberSum.swift in Sources */,
 				21E40BE02B883129005886FB /* ContentView.swift in Sources */,
+				21AE136C2B884B7500CD7890 /* insertionSort.swift in Sources */,
 				21AE13642B88371400CD7890 /* BubbleSort.swift in Sources */,
 				21AE13622B88318800CD7890 /* IsValidSubsequence.swift in Sources */,
 				21E40BDE2B883129005886FB /* AlgorithmsApp.swift in Sources */,
