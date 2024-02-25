@@ -11,29 +11,27 @@ class BST {
     var left: BST?
     var right: BST?
     
-    
     init(value: Int) {
         self.value = value
     }
     
-    
-    
-    func branchSums(root: BST?) -> [Int] {
+    func branchSums(root: BST) -> [Int] {
         var sums = [Int]()
-     calculateBranchSums(node: root, branchSums: 0, sums: &sums)
+        
+        calculateBranchSums(node: root, runningSum: 0, sums: &sums)
         
         return sums
     }
-    
-    func calculateBranchSums(node: BST?,branchSums: Int, sums: inout [Int]) {
+//                                                                               function body  |
+    func calculateBranchSums(node: BST?, runningSum: Int, sums: inout [Int]) { //               V
         if let n = node {
-            var newBranchSums = branchSums + n.value
+            let newRunningSum = runningSum + node!.value // node is a property of BST so I can use ".value"
             if n.left == nil && n.right == nil {
-               return sums.append(newBranchSums)
+                sums.append(newRunningSum)
+                return
             }
-            calculateBranchSums(node: n.left, branchSums: newBranchSums, sums: &sums)
-            calculateBranchSums(node: n.left, branchSums: newBranchSums, sums: &sums)
-
+            calculateBranchSums(node: node?.left, runningSum: newRunningSum, sums: &sums)
+            calculateBranchSums(node: node?.right, runningSum: newRunningSum, sums: &sums)
         }
     }
 }
