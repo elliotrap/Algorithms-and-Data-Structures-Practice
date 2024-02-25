@@ -6,14 +6,6 @@
 //
 
 import Foundation
-class BST {
-    var value: Int
-    var left: BST?
-    var right: BST?
-    
-    init(value: Int) {
-        self.value = value
-    }
     
     func branchSums(root: BST) -> [Int] {
         var sums = [Int]()
@@ -34,4 +26,4 @@ class BST {
             calculateBranchSums(node: node?.right, runningSum: newRunningSum, sums: &sums)
         }
     }
-}
+

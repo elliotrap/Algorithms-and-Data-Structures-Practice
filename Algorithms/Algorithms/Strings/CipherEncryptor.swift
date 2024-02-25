@@ -8,29 +8,29 @@
 import Foundation
 
 
-func cipherEncryptor(string: String, key: UInt32) -> String{
-   var newLetters = [Character]() // add the new empty characters array to sore new encrypted letters
-   var newKey = key % 26 // make the key that will be used to shift the alphabet
+func encryptor(string: String, key: UInt32) -> String {
+    var newLetters = [Character]()
+    var newKey = key % 26
     
-   // the for loop that gets the letters from the shifted alphabet using the key
     for letters in string {
-        newLetters.append(letterCode(letters, newKey))
+        newLetters.append.newLetterCode(letters, newKey)
     }
-    return String(newLetters) // return the new encrypted letters
+    
+    return String(newLetters)
+    
 }
 
-func letterCode(_ letters: Character,_ key: UInt32) -> Character {
-    let newLetterCode = letters.unicodeScalars.first!.value + key // the new letter code from the letters that where shifted by the key
+func newLetterCode(_ letters: Character, _ key: UInt32) -> Character {
+   let newCode = letters.unicodeScalars.first!.value + 1
     
-    let code: UnicodeScalar?
+    var code: UnicodeScalar?
     
-    if newLetterCode <= 122 {
-        code = UnicodeScalar(newLetterCode)
+    if newCode < 122 {
+        code = UnicodeScalar(newCode)
     } else {
-       code = UnicodeScalar(96 + newLetterCode % 122)
+        code = UnicodeScalar(96 + newCode % 122)
     }
     return Character(code!)
-    
 }
 
 
