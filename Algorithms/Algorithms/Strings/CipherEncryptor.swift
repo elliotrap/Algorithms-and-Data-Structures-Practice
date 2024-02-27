@@ -8,30 +8,30 @@
 import Foundation
 
 
-func encryptor(string: String, key: UInt32) -> String {
-    var newLetters = [Character]()
-    var newKey = key % 26
-    
-    for letters in string {
-        newLetters.append.newLetterCode(letters, newKey)
-    }
-    
-    return String(newLetters)
-    
-}
-
-func newLetterCode(_ letters: Character, _ key: UInt32) -> Character {
-   let newCode = letters.unicodeScalars.first!.value + 1
-    
-    var code: UnicodeScalar?
-    
-    if newCode < 122 {
-        code = UnicodeScalar(newCode)
-    } else {
-        code = UnicodeScalar(96 + newCode % 122)
-    }
-    return Character(code!)
-}
+//func encryptor(string: String, key: UInt32) -> String {
+//    var newLetters = [Character]()
+//    var newKey = key % 26
+//    
+//    for letters in string {
+//        newLetters.append.newLetterCode(letters, newKey)
+//    }
+//    
+//    return String(newLetters)
+//    
+//}
+//
+//func newLetterCode(_ letters: Character, _ key: UInt32) -> Character {
+//   let newCode = letters.unicodeScalars.first!.value + 1
+//    
+//    var code: UnicodeScalar?
+//    
+//    if newCode < 122 {
+//        code = UnicodeScalar(newCode)
+//    } else {
+//        code = UnicodeScalar(96 + newCode % 122)
+//    }
+//    return Character(code!)
+//}
 
 
 

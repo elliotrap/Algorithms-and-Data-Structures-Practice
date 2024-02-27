@@ -16,20 +16,20 @@ class Node {
         children = []
     }
     
-    func appendChildren(root: String) -> Node {
-        var addChild = Node(name: root)
+    
+    func addNode(root: Node) -> Node {
+        var addChildren = Node(name: name)
         
-        children.append(addChild)
+        children.append(addChildren)
         
         return self
     }
     
-    func depthFirstSearch(array: inout [String]) -> [String] {
+    func depthFirstSearch(array: inout [String])  {
         array.append(name)
         
         for child in children {
             depthFirstSearch(array: &array)
         }
-        return array
     }
 }

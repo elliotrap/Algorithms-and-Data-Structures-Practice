@@ -25,6 +25,7 @@
 		21E40BEF2B88312A005886FB /* AlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E40BEE2B88312A005886FB /* AlgorithmsTests.swift */; };
 		21E40BF92B88312A005886FB /* AlgorithmsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E40BF82B88312A005886FB /* AlgorithmsUITests.swift */; };
 		21E40BFB2B88312A005886FB /* AlgorithmsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E40BFA2B88312A005886FB /* AlgorithmsUITestsLaunchTests.swift */; };
+		21ECE2112B8D70C000636C0D /* TournamentWinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECE2102B8D70C000636C0D /* TournamentWinner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		21E40BF42B88312A005886FB /* AlgorithmsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21E40BF82B88312A005886FB /* AlgorithmsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsUITests.swift; sourceTree = "<group>"; };
 		21E40BFA2B88312A005886FB /* AlgorithmsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		21ECE2102B8D70C000636C0D /* TournamentWinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentWinner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				21AE135F2B88317100CD7890 /* TwoNumberSum.swift */,
 				21AE13612B88318800CD7890 /* IsValidSubsequence.swift */,
 				21AE137E2B89D40B00CD7890 /* SortedSquaredArray.swift */,
+				21ECE2102B8D70C000636C0D /* TournamentWinner.swift */,
 			);
 			path = Arrays;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				21AE13682B88374900CD7890 /* BranchSums.swift in Sources */,
 				21AE136A2B88376B00CD7890 /* CipherEncryptor.swift in Sources */,
 				21AE13702B891F1600CD7890 /* MinimumWaitingTime.swift in Sources */,
+				21ECE2112B8D70C000636C0D /* TournamentWinner.swift in Sources */,
 				21AE13662B88372F00CD7890 /* DepthFirstSearch.swift in Sources */,
 				21AE13602B88317100CD7890 /* TwoNumberSum.swift in Sources */,
 				21E40BE02B883129005886FB /* ContentView.swift in Sources */,
