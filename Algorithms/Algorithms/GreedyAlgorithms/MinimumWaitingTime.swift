@@ -8,10 +8,12 @@
 import Foundation
 
 
-func minimumWaitingTime(_ queries: [Int]) -> Int {
-    var totalTime = 0
-    for (idx, queris) in queries.enumerated() {
-        
+func minimumWaitingTime(queries: inout [Int]) -> Int {
+    queries.sort()
+    var totalWaitingTime = 0
+    for (idx, duration) in queries.enumerated() {
+        let queriesLeft = queries.count - (idx + 1)
+        totalWaitingTime += queriesLeft * duration
     }
-    return totalTime
+    return totalWaitingTime
 }

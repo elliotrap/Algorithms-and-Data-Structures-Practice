@@ -26,6 +26,8 @@
 		21E40BF92B88312A005886FB /* AlgorithmsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E40BF82B88312A005886FB /* AlgorithmsUITests.swift */; };
 		21E40BFB2B88312A005886FB /* AlgorithmsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E40BFA2B88312A005886FB /* AlgorithmsUITestsLaunchTests.swift */; };
 		21ECE2112B8D70C000636C0D /* TournamentWinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECE2102B8D70C000636C0D /* TournamentWinner.swift */; };
+		21ECE2712B8EBB0800636C0D /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECE2702B8EBB0800636C0D /* BinarySearch.swift */; };
+		21ECE2742B8ED5FC00636C0D /* ProductSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECE2732B8ED5FC00636C0D /* ProductSum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		21E40BF82B88312A005886FB /* AlgorithmsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsUITests.swift; sourceTree = "<group>"; };
 		21E40BFA2B88312A005886FB /* AlgorithmsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		21ECE2102B8D70C000636C0D /* TournamentWinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentWinner.swift; sourceTree = "<group>"; };
+		21ECE2702B8EBB0800636C0D /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		21ECE2732B8ED5FC00636C0D /* ProductSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,8 @@
 				21AE137B2B89209900CD7890 /* Graphs */,
 				21AE13762B891FFD00CD7890 /* GreedyAlgorithms */,
 				21AE13792B89203C00CD7890 /* LinkedLists */,
+				21ECE2722B8ED5D000636C0D /* Recursion */,
+				21ECE26F2B8EBAD000636C0D /* Search */,
 				21E40BE12B88312A005886FB /* Assets.xcassets */,
 				21E40BE32B88312A005886FB /* Preview Content */,
 			);
@@ -217,6 +223,22 @@
 				21E40BFA2B88312A005886FB /* AlgorithmsUITestsLaunchTests.swift */,
 			);
 			path = AlgorithmsUITests;
+			sourceTree = "<group>";
+		};
+		21ECE26F2B8EBAD000636C0D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				21ECE2702B8EBB0800636C0D /* BinarySearch.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		21ECE2722B8ED5D000636C0D /* Recursion */ = {
+			isa = PBXGroup;
+			children = (
+				21ECE2732B8ED5FC00636C0D /* ProductSum.swift */,
+			);
+			path = Recursion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21AE13682B88374900CD7890 /* BranchSums.swift in Sources */,
+				21ECE2742B8ED5FC00636C0D /* ProductSum.swift in Sources */,
 				21AE136A2B88376B00CD7890 /* CipherEncryptor.swift in Sources */,
 				21AE13702B891F1600CD7890 /* MinimumWaitingTime.swift in Sources */,
 				21ECE2112B8D70C000636C0D /* TournamentWinner.swift in Sources */,
@@ -363,6 +386,7 @@
 				21AE13812B89D47200CD7890 /* InsertionSort.swift in Sources */,
 				21AE137D2B8921B900CD7890 /* EvaluateExpressionTree.swift in Sources */,
 				21E40BDE2B883129005886FB /* AlgorithmsApp.swift in Sources */,
+				21ECE2712B8EBB0800636C0D /* BinarySearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,8 +24,8 @@ class LinkedList: Hashable {
     return left === right
   }
 }
-    
-func middleNode(linkedList: LinkedList) -> LinkedList? {
+
+func middleNode(_ linkedList: LinkedList) -> LinkedList? {
     var counter = 0
     var currentNode: LinkedList? = linkedList
     
@@ -39,7 +39,6 @@ func middleNode(linkedList: LinkedList) -> LinkedList? {
     for i in 0 ..< (counter / 2) {
         middleNode = middleNode!.next
     }
-    
     return middleNode
 }
 
