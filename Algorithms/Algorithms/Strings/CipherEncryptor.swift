@@ -8,30 +8,37 @@
 import Foundation
 
 
-//func encryptor(string: String, key: UInt32) -> String {
-//    var newLetters = [Character]()
-//    var newKey = key % 26
-//    
-//    for letters in string {
-//        newLetters.append.newLetterCode(letters, newKey)
-//    }
-//    
-//    return String(newLetters)
-//    
-//}
-//
-//func newLetterCode(_ letters: Character, _ key: UInt32) -> Character {
-//   let newCode = letters.unicodeScalars.first!.value + 1
-//    
-//    var code: UnicodeScalar?
-//    
-//    if newCode < 122 {
-//        code = UnicodeScalar(newCode)
-//    } else {
-//        code = UnicodeScalar(96 + newCode % 122)
-//    }
-//    return Character(code!)
-//}
+
+
+func caesarCipherEncryptor(string: String, key: UInt32) -> String {
+    var newLetters = [Character]()
+    let newKey = key % 26
+    
+    for letters in string {
+     newLetters.append(newLetterCode(letters, key))
+    }
+    
+    return String(newLetters)
+}
+
+func newLetterCode(_ letters: Character,_ key: UInt32) -> Character {
+    
+    let letterCode = letters.unicodeScalars.first!.value + key
+    
+    var code: UnicodeScalar?
+    
+    if letterCode <= 122 {
+        code = UnicodeScalar(letterCode)
+    } else {
+        code = UnicodeScalar(26 % letterCode + key)
+    }
+    
+    return Character(code!)
+}
+
+
+
+
 
 
 

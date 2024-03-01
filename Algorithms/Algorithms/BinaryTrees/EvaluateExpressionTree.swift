@@ -8,7 +8,7 @@
 import Foundation
 
 // This is an input class. Do not edit.
-class BinaryTree {
+// class BinaryTree {
     var value: Int
     var left: BinaryTree?
     var right: BinaryTree?
@@ -20,25 +20,23 @@ class BinaryTree {
     }
     
     
-    func evaluateExpressionTree(_ tree: BinaryTree) -> Int {
-        
-        if tree.value > 0 {
+    func evaluateExpression(tree: BinaryTree) -> Int {
+        while tree.value > 0 {
             return tree.value
         }
         
-        var leftNode = evaluateExpressionTree(tree.left!)
-        var rightNode = evaluateExpressionTree(tree.right!)
-       
+        var leftValue = evaluateExpression(tree: tree.left!)
+        var rightValue = evaluateExpression(tree: tree.right!)
         
         if tree.value == -1 {
-            return leftNode + rightNode
+            return leftValue + rightValue
         }
         if tree.value == -2 {
-            return leftNode + rightNode
+        return leftValue - rightValue
         }
         if tree.value == -3 {
-            return leftNode / rightNode
+            return leftValue * rightValue
         }
-        return leftNode * rightNode
+        return leftValue / rightValue
     }
 }

@@ -28,6 +28,7 @@
 		21ECE2112B8D70C000636C0D /* TournamentWinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECE2102B8D70C000636C0D /* TournamentWinner.swift */; };
 		21ECE2712B8EBB0800636C0D /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECE2702B8EBB0800636C0D /* BinarySearch.swift */; };
 		21ECE2742B8ED5FC00636C0D /* ProductSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECE2732B8ED5FC00636C0D /* ProductSum.swift */; };
+		21ECE2912B90279A00636C0D /* NodeDepths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECE2902B90279A00636C0D /* NodeDepths.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		21ECE2102B8D70C000636C0D /* TournamentWinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentWinner.swift; sourceTree = "<group>"; };
 		21ECE2702B8EBB0800636C0D /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		21ECE2732B8ED5FC00636C0D /* ProductSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSum.swift; sourceTree = "<group>"; };
+		21ECE2902B90279A00636C0D /* NodeDepths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeDepths.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				21AE13672B88374900CD7890 /* BranchSums.swift */,
 				21AE137C2B8921B900CD7890 /* EvaluateExpressionTree.swift */,
+				21ECE2902B90279A00636C0D /* NodeDepths.swift */,
 			);
 			path = BinaryTrees;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				21AE137F2B89D40B00CD7890 /* SortedSquaredArray.swift in Sources */,
 				21AE13812B89D47200CD7890 /* InsertionSort.swift in Sources */,
 				21AE137D2B8921B900CD7890 /* EvaluateExpressionTree.swift in Sources */,
+				21ECE2912B90279A00636C0D /* NodeDepths.swift in Sources */,
 				21E40BDE2B883129005886FB /* AlgorithmsApp.swift in Sources */,
 				21ECE2712B8EBB0800636C0D /* BinarySearch.swift in Sources */,
 			);

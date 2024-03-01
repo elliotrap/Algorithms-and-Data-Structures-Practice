@@ -8,22 +8,22 @@
 import Foundation
 
 
-
 func sortedSquaredArray(_ array: [Int]) -> [Int] {
     var sortedSquares = Array(repeating: 0, count: array.count)
     
-    var smallerValue = 0
-    var largerValue = array.count - 1
+    var smallerValueIdx = 0
+    var largerValueIdx = array.count - 1
     
-    for idx in stride(from: array.count - 1, to: 0, by: 1) {
-        var smallerValueIdx = array[smallerValue]
-        var largerValueIdx = array[largerValue]
-        if abs(largerValue) > abs(largerValue) {
-            sortedSquares[idx] = smallerValueIdx * smallerValueIdx
-            smallerValue += 1
+    for idx in stride(from: array.count, through: 0, by: -1) {
+        let leftValue = array[smallerValueIdx]
+        let rightValue = array[largerValueIdx]
+        
+        if abs(leftValue) > abs(rightValue) {
+            sortedSquares[idx] = leftValue * leftValue
+            smallerValueIdx += 1
         } else {
-            sortedSquares[idx] = largerValueIdx * largerValueIdx
-            largerValue -= 1
+            sortedSquares[idx] = rightValue * rightValue
+            largerValueIdx -= 1
         }
     }
     return sortedSquares

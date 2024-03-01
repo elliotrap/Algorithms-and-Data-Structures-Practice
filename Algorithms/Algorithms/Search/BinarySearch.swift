@@ -7,29 +7,31 @@
 
 import Foundation
 
-func binarySearch(array: [Int], target: Int) -> Int {
-    var leftPointer = 0
-    var rightPointer = array.count - 1
 
-    return binarySearchHelper(array: array, target: target, leftPointer: &leftPointer, rightPointer: &rightPointer)
-}
 
-func binarySearchHelper(array: [Int], target: Int, leftPointer: inout Int, rightPointer: inout Int) -> Int {
-    while leftPointer <= rightPointer {
-        let middle = (leftPointer + rightPointer) / 2
-        let potientialMatch = middle
-        if target == potientialMatch {
-            return middle
-        } else if target > potientialMatch {
-            rightPointer = middle - 1
-        } else {
-            leftPointer = middle + 1
-        }
+    func binarySearch( array: [Int],target: Int) -> Int {
+        var leftPointer = 0
+        var rightPointer = array.count - 1
+       return binarySearchHelper(array: array, target: target, leftPointer: &leftPointer, rightPointer: &rightPointer)
     }
-    return -1
-}
 
-        
+    func binarySearchHelper(array: [Int], target: Int, leftPointer: inout Int, rightPointer: inout Int) -> Int {
+        while leftPointer <= rightPointer {
+            let middle = (leftPointer + rightPointer) / 2
+            let potentialMatch = array[middle]
+            if middle == potentialMatch {
+                return middle
+            } else if target < potentialMatch {
+                rightPointer = middle - 1
+            } else {
+                leftPointer = middle + 1
+            }
+        }
+        return -1
+    }
+          
+
+    
 
     
 
