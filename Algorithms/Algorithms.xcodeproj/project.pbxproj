@@ -29,6 +29,7 @@
 		21ECE2712B8EBB0800636C0D /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECE2702B8EBB0800636C0D /* BinarySearch.swift */; };
 		21ECE2742B8ED5FC00636C0D /* ProductSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECE2732B8ED5FC00636C0D /* ProductSum.swift */; };
 		21ECE2912B90279A00636C0D /* NodeDepths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECE2902B90279A00636C0D /* NodeDepths.swift */; };
+		21ECE2F42B93A60300636C0D /* NthFibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ECE2F32B93A60300636C0D /* NthFibonacci.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		21ECE2702B8EBB0800636C0D /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		21ECE2732B8ED5FC00636C0D /* ProductSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSum.swift; sourceTree = "<group>"; };
 		21ECE2902B90279A00636C0D /* NodeDepths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeDepths.swift; sourceTree = "<group>"; };
+		21ECE2F32B93A60300636C0D /* NthFibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NthFibonacci.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				21ECE2732B8ED5FC00636C0D /* ProductSum.swift */,
+				21ECE2F32B93A60300636C0D /* NthFibonacci.swift */,
 			);
 			path = Recursion;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				21ECE2912B90279A00636C0D /* NodeDepths.swift in Sources */,
 				21E40BDE2B883129005886FB /* AlgorithmsApp.swift in Sources */,
 				21ECE2712B8EBB0800636C0D /* BinarySearch.swift in Sources */,
+				21ECE2F42B93A60300636C0D /* NthFibonacci.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
